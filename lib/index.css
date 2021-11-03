@@ -383,7 +383,8 @@ img {
 
 @media screen and (max-width: 800px) {
   .tips-boxes {
-    flex-direction: column;
+    flex-direction: row;
+    row-gap: 1.6rem;
   }
 }
 
