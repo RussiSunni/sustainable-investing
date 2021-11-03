@@ -343,10 +343,12 @@ img {
   margin-bottom: 2.5rem;
 }
 .tips-boxes {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   column-gap: 2.5%;
 }
+
 .tips-box {
   padding: 2.5rem;
 }
@@ -378,6 +380,61 @@ img {
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 800px) {
+  .tips-boxes {
+    flex-direction: column;
+  }
+}
+
+/* Flip cards */
+
+.flip-card {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  padding: 2.5rem;
+  height: 300px;
+  width: 31.6666%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+} 
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.flip-card:nth-child(odd) {
+  background-color: #00796d;
+}
+.flip-card:nth-child(odd) .section-text {
+  color: #fff;
+}
+.flip-card:nth-child(even) {
+  background-color: #fff;
+}
+.flip-card:nth-child(even) .section-text {
+  color: #00796d;
+}
+
+@media screen and (max-width: 800px) {
+  .flip-card {
+    width: 100%;
+  }
+}
+
+
 
 /* Instructions */
 .instructions .section-title {
@@ -548,49 +605,3 @@ img {
   }
 }
 
-/* Flip cards */
-
-.flip-card {
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  padding: 2.5rem;
-  height: 300px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transform-style: preserve-3d;
-}
-
-.front,
-.back {
-  position: absolute;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  backface-visibility: hidden;
-  width:fit-content;*/
-} 
-
-.back {
-  transform: rotateY(180deg);
-}
-
-
-.flip-card:nth-child(odd) {
-  background-color: #00796d;
-}
-.flip-card:nth-child(odd) .section-text {
-  color: #fff;
-}
-.flip-card:nth-child(even) {
-  background-color: #fff;
-}
-.flip-card:nth-child(even) .section-text {
-  color: #00796d;
-}
