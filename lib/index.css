@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
 }
 html {
   scroll-behavior: smooth;
@@ -52,15 +52,15 @@ img {
 /* fonts */
 .font-circular,
 .font-circular * {
-  font-family: 'Schroders Circular TT';
+  font-family: "Schroders Circular TT";
 }
 .font-noto-sans,
 .font-noto-sans * {
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
 }
 .font-noto-sans-ui,
 .font-noto-sans-ui * {
-  font-family: 'Noto Sans UI';
+  font-family: "Noto Sans UI";
 }
 
 /* left */
@@ -176,35 +176,41 @@ img {
   color: #fff;
 }
 .intro {
-  background: url(../assets/banner-homepage-hero-1190-x-600@2x.png) no-repeat center;
+  background: url(../assets/banner-homepage-hero-1190-x-600@2x.png) no-repeat
+    center;
 }
 
 .module1-1 {
   height: 28.125rem;
-  padding-top:8rem;
-  background: url(../assets/banner-mod-1-hero-1-1190-x-450@2x.jpg) no-repeat center;
+  padding-top: 8rem;
+  background: url(../assets/banner-mod-1-hero-1-1190-x-450@2x.jpg) no-repeat
+    center;
 }
 
 .module1-2 {
   height: 28.125rem;
-  padding-top:8rem;
-  background: url(../assets/banner-mod-1-hero-2-1190-x-450@2x.png) no-repeat center;
+  padding-top: 8rem;
+  background: url(../assets/banner-mod-1-hero-2-1190-x-450@2x.png) no-repeat
+    center;
 }
 
 .module1-3 {
   height: 28.125rem;
-  padding-top:8rem;
-  background: url(../assets/banner-mod-1-hero-3-1190-x-450@2x.png) no-repeat center;
+  padding-top: 8rem;
+  background: url(../assets/banner-mod-1-hero-3-1190-x-450@2x.png) no-repeat
+    center;
 }
 .module1-4 {
   height: 28.125rem;
-  padding-top:10.5rem;
-  background: url(../assets/banner-knowledge-1-hero-1190-x-450@2x.png) no-repeat center;
+  padding-top: 10.5rem;
+  background: url(../assets/banner-knowledge-1-hero-1190-x-450@2x.png) no-repeat
+    center;
 }
 .module1-summary {
   height: 28.125rem;
-  padding-top:10.5rem;
-  background: url(../assets/banner-mod-1-summary-hero-1190-x-450@2x.png) no-repeat center;
+  padding-top: 10.5rem;
+  background: url(../assets/banner-mod-1-summary-hero-1190-x-450@2x.png)
+    no-repeat center;
 }
 
 .banner .banner-text {
@@ -213,7 +219,7 @@ img {
 .banner .title-text {
   font-size: 3rem;
   text-transform: uppercase;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   font-weight: 700;
   font-style: italic;
   line-height: 1em;
@@ -257,7 +263,7 @@ img {
 /* Options & Feedback */
 .option,
 .option * {
-  font-family: 'Schroders Circular TT';
+  font-family: "Schroders Circular TT";
   font-weight: 500;
 }
 .option-number {
@@ -269,7 +275,7 @@ img {
   font-size: 5rem;
   font-weight: 800;
   font-style: italic;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
 }
 .option .section-text {
   font-weight: 500;
@@ -513,7 +519,7 @@ img {
   font-size: 5rem;
   font-weight: 700;
   font-style: italic;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   color: #00796d;
   font-stretch: condensed;
 }
@@ -522,7 +528,7 @@ img {
   font-size: 5rem;
   font-weight: 700;
   font-style: italic;
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   color: #b71962;
   font-stretch: condensed;
 }
@@ -540,4 +546,51 @@ img {
   :root {
     font-size: 32px;
   }
+}
+
+/* Flip cards */
+
+.flip-card {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  padding: 2.5rem;
+  height: 300px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  width:fit-content;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card:nth-child(odd) {
+  background-color: #00796d;
+}
+.flip-card:nth-child(odd) .section-text {
+  color: #fff;
+}
+.flip-card:nth-child(even) {
+  background-color: #fff;
+}
+.flip-card:nth-child(even) .section-text {
+  color: #00796d;
 }
