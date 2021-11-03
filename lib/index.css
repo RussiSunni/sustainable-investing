@@ -569,13 +569,13 @@ img {
 .front,
 .back {
   position: absolute;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   backface-visibility: hidden;
   width:fit-content;
-}
+} */
 
 .back {
   transform: rotateY(180deg);
