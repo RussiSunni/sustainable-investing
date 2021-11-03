@@ -13,8 +13,9 @@
 
 <body>
 	<div id="app">
-		<div class="header font-circular">
-			<span class="helper"></span>
+		<div id="header" class="header font-circular">
+			<span class="logo-center-helper"></span>
+			<button class="openbtn" onclick="openNav()">☰</button>  
 			<a href='index.html'><img class="logo-img" src="assets/schroders-logo-white-solo.svg" /></a>
 			<!-- <svg class="logo">
           <use 
@@ -23,8 +24,9 @@
           </use>
         </svg> -->
 		</div>
-		<div class="main">
-			<div class="left">
+		<div id="main" class="main">
+			<div id="left" class="left">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 				<div class="search">
 					<img class="search-btn" src='assets/button-search-in-text-field@3x.png' />
 					<input type="text" />
@@ -84,7 +86,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="right">
+			<div id="right" class="right">
 				<div class="banner intro">
 					<div class="banner-text">
 						<div class="title">
