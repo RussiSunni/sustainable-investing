@@ -574,8 +574,8 @@ img {
   justify-content: center;
   align-items: center;
   backface-visibility: hidden;
-  width:fit-content;
-} */
+  width:fit-content;*/
+} 
 
 .back {
   transform: rotateY(180deg);
