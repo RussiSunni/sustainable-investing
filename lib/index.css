@@ -729,6 +729,7 @@ div.right {
 /* Form */
 .summary-form {
   background-color: white;
+  border-radius: 2.5px;
 }
 
 
