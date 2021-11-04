@@ -10,10 +10,8 @@ html {
 }
 
 html, body {
-  height:100%;
   margin: 0;
 }
-
 
 img {
   max-width: 100%;
@@ -270,15 +268,17 @@ div.right {
 .intro {
   background: url(../assets/banner-homepage-hero-1190-x-600@2x.png);
   height: 70%;
-  background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
+  background-position: center center;
+  background-attachment: scroll; 
 }
 
 @media screen and (max-width: 700px) {
   .intro {
     background-size: contain;
+    background-position: top center;
   }  
 }
 
