@@ -520,7 +520,8 @@ div.right {
   top: 0;
   left: 0;
   -webkit-backface-visibility: hidden; 
-  backface-visibility: hidden; 
+  backface-visibility: hidden;
+  width: 100%;
 } 
 
 .front {
