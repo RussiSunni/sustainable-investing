@@ -9,6 +9,12 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  height:100%;
+  margin: 0;
+}
+
+
 img {
   max-width: 100%;
 }
@@ -63,6 +69,7 @@ img {
 }
 .main {
   margin-top:148px;
+  height: 100%;
   /* display: flex; */
 }
 
@@ -236,6 +243,7 @@ img {
 div.right {
   margin-left: 250px;
   background-color: #000;
+  height: 100%;
 }
 
 /* .right {
@@ -261,13 +269,20 @@ div.right {
 }
 .intro {
   background: url(../assets/banner-homepage-hero-1190-x-600@2x.png);
-  height: 41%;
-  background-position: center;
+  height: 70%;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
 }
+
+@media screen and (max-width: 700px) {
+  .intro {
+    background-size: contain;
+  }  
 }
+
+
 
 .module1-1 {
   height: 28.125rem;
@@ -304,6 +319,8 @@ div.right {
 
 .banner .banner-text {
   width: 50%;
+
+  
 }
 .banner .title-text {
   font-size: 3rem;
