@@ -519,8 +519,15 @@ div.right {
   backface-visibility: hidden; 
 } 
 
+.front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+ }
+
 .back {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .flip-card:nth-child(odd) {
