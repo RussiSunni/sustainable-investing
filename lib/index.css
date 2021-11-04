@@ -720,9 +720,12 @@ div.right {
 }
 
 
-
 /* Quiz */
-
 #module-1 {
   display: none;
+}
+
+/* Video */
+#player {
+  width: 100%;
 }
