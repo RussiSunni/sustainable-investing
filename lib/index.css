@@ -497,12 +497,14 @@ div.right {
 /* Flip cards */
 
 .flip-card {
-  transition: transform 1s;
-  transform-style: preserve-3d;
+  position: relative;
   cursor: pointer;
   padding: 2.5rem;
   height: 300px;
   width: 31.6666%;
+ 
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
 }
 
 .flip-card-inner {
@@ -511,11 +513,16 @@ div.right {
   height: 100%;
   text-align: center;
   transform-style: preserve-3d;
+  
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 .front,
 .back {
   position: absolute;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden; 
 } 
 
 .back {
