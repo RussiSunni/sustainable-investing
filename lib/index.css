@@ -718,3 +718,11 @@ div.right {
 .summary-form {
   background-color: white;
 }
+
+
+
+/* Quiz */
+
+#module-1 {
+  display: none;
+}

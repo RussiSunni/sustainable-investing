@@ -9,6 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <title>Schroders-UOB Sustainable Investing Master Class</title>
 </head>
 
@@ -135,21 +136,36 @@
             </div>
           </div>
 
-          <div class="section score" id="score">
+          <!-- <div class="section score" id="score">
             <div class="score-wrapper">
               <div class="score-detail">
                 <div class="your-score">Your score</div>
+
                 <div class="score-percentage-33">33%</div>
               </div>
               <img src="assets/illustrations-kc-score-bgd-image-33.svg">
             </div>
+          </div> -->
+
+          <div id="app">          
+            <div class="section score" id="score">
+              <div class="score-wrapper">
+                <div class="score-detail">
+                  <div class="your-score">Your score</div>
+  
+                  <div class="score-percentage-33">{{resultScore}}%</div>
+                </div>
+                <img :src=resultImgURL>
+              </div>
+            </div>
           </div>
           
         </div>
-        <div class="section module" id="module-1">
-          <a href='module01-08.html' class="module-question font-circular">
+        <div class="section module">
+          <a :href=nextURLLink 
+           class="module-question font-circular">
             <div class="section-text">
-              Take again <img src="assets/btn-cta-white@3x.png" />
+              {{ nextURLText }} <img src="assets/btn-cta-white@3x.png" />
             </div>
           </a>
         </div>
@@ -159,6 +175,7 @@
 
   <script src="lib/index.js">
   </script>
+   <script src="lib/vueIndex.js"></script>
 </body>
 
 </html>
