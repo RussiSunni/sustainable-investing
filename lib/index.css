@@ -11,6 +11,7 @@ html {
 
 html, body {
   margin: 0;
+  height: 100%
 }
 
 img {
@@ -261,6 +262,9 @@ div.right {
 
 
 /* Content div */
+.content {
+  padding-bottom:0;
+}
 
 
 
@@ -658,7 +662,7 @@ div.right {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3.4375rem 0;
+  padding: 3.4375rem 0;
 }
 .submodule-indicator {
   padding: 0.5rem;
@@ -736,9 +740,16 @@ div.right {
 /* Quiz */
 #module-1 {
   display: none;
+  padding-top: 0;
 }
 
 /* Video */
 #player {
   width: 100%;
+}
+
+
+/* Footer */
+.section {
+ 
 }
