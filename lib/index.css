@@ -498,7 +498,9 @@ div.right {
   width: 31.6666%;
  
   transform-style: preserve-3d;
-  transition: transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
 }
 
 .flip-card-inner {
@@ -515,6 +517,8 @@ div.right {
 .front,
 .back {
   position: absolute;
+  top: 0;
+  left: 0;
   -webkit-backface-visibility: hidden; 
   backface-visibility: hidden; 
 } 
@@ -526,8 +530,8 @@ div.right {
  }
 
 .back {
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
 }
 
 .flip-card:nth-child(odd) {
