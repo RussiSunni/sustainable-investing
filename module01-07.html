@@ -154,7 +154,7 @@
                 <div class="score-detail">
                   <div class="your-score">Your score</div>
   
-                  <div class="score-percentage-33">{{resultScore}}%</div>
+                  <div v-bind:class=scoreClass>{{resultScore}}%</div> 
                 </div>
                 <img :src=resultImgURL>
               </div>

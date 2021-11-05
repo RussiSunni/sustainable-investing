@@ -175,7 +175,7 @@ img {
   margin-bottom: 3.125rem;
 }
 .progress-bar {
-  height: 0.125rem;
+  height: 2px;
   background: #494949;
 }
 .progress-bar div {
@@ -729,7 +729,7 @@ div.right {
   font-style: italic;
   font-family: "Noto Sans";
   color: #00796d;
-  font-stretch: condensed;
+  font-stretch: condensed; 
 }
 .score-percentage-33 {
   line-height: 1em;
