@@ -558,6 +558,33 @@ div.right {
   }
 }
 
+/* Cards */
+
+.card {
+  padding: 2.5rem;  
+  width: 31.6666%;
+}
+
+.card:nth-child(odd) {
+  background-color: #00796d;
+}
+.card:nth-child(odd) .section-text {
+  color: #fff;
+}
+.card:nth-child(even) {
+  background-color: #fff;
+}
+.card:nth-child(even) .section-text {
+  color: #00796d;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
 
 
 /* Instructions */
@@ -748,7 +775,7 @@ div.right {
   width: 100%;
 }
 
-
+ 
 /* Footer */
 .section {
  
