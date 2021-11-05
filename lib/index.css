@@ -733,7 +733,7 @@ div.right {
 /* Form */
 .summary-form {
   background-color: white;
-  border-radius: 2.5px;
+  border-radius: 2.5px; 
 }
 
 
@@ -752,4 +752,10 @@ div.right {
 /* Footer */
 .section {
  
+}
+
+
+/* Images */
+.full-width {
+  width: 100%;
 }
